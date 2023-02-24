@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --primary: #5bcc57;
+
+    --h1: 64px;
+    --h2: 48px;
+    --h3: 42px;
+    --h4: 32px;
+
+    --txtmedium: 18px;
+    --txtregular: 16px;
+    --txtlight: 13px;
+
+    --fontwbold: 700;
+    --fontwsemibold: 600;
+    --fontwmedium: 500;
+    --fontwregular: 400;
+    --fontwlight: 300;
+
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+.navbar {
+    padding: 18px 0;
+}
+
+section.home {
+    margin: 5rem 0;
+    color: rgb(0, 0, 0);
+}
+
+.text-label,
+.text-bold,
+.text-regular {
+    margin: 14px 0;
+    
+}
+
+.text-label {
+    color: #2F2E41;
+    font-size: var(--h1);
+    font-weight: var(--fontwbold);
+    line-height: 55px;
+
+}
+
+.text-label span {
+    color: var(--primary);
+    font-size: var(--h1);
+    font-weight: var(--fontwbold);
+}
+
+.text-bold {
+    color: rgb(0, 0, 0);
+    font-size: var(--txtregular);
+    font-weight: var(--fontwregular);
+    line-height: 74px;
+}
+
+.text-regular {
+    color: rgb(49, 49, 49);
+    font-size: var(--txtregular);
+    font-weight: var(--fontwregular);
+    line-height: 31px;
+}
+
+.testimoni-brand {
+    padding: 24px 0;
+}
+
+.btn {
+    background: var(--primary);
+    border-style: none;
+}
+
+.btn:hover {
+    background: #307c2d;
+    border-style: none
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 28px 0;
+    }
+
+    a.nav-link {
+        margin-right: 7px 0;
+    }
+
+    section.home {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    .text-label,
+    .text-bold,
+    .text-regular {
+        text-align: center;
+    }
+
+
+
+}
