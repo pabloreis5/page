@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
+
 :root {
     --primary: #5bcc57;
 
@@ -18,14 +19,8 @@
     --fontwmedium: 500;
     --fontwregular: 400;
     --fontwlight: 300;
-
-
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #ffffff;
-}
 
 .navbar {
     padding: 18px 0;
@@ -34,13 +29,14 @@ body {
 section.home {
     margin: 5rem 0;
     color: rgb(0, 0, 0);
+    background: #ffffff;
 }
 
 .text-label,
 .text-bold,
 .text-regular {
     margin: 14px 0;
-    
+
 }
 
 .text-label {
@@ -85,6 +81,135 @@ section.home {
     border-style: none
 }
 
+section.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212529;
+}
+
+.cards .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.24),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.075),
+        5px 5px 5px rgba(255, 255, 255, 0.24),
+        5px -5px 5px rgba(0, 0, 0, 0.075);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ffffff;
+    box-shadow: #ffffff28;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.075);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2 {
+    color: rgba(0, 0, 0, 0.075);
+}
+
+.container .card .box .content h3 {
+    font-size: 1.8em;
+    color: #212529;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #313131;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #307c2d;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card:hover .box .content a {
+    background: #8f0909;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 576px) {
     .navbar {
         padding: 28px 0;
@@ -112,6 +237,10 @@ section.home {
     .text-bold,
     .text-regular {
         text-align: center;
+    }
+
+    .nav-space {
+        margin-left: 100px;
     }
 
 
