@@ -10,9 +10,9 @@
     --h3: 42px;
     --h4: 32px;
 
-    --txtmedium: 18px;
-    --txtregular: 16px;
-    --txtlight: 13px;
+    --txtmedium: 20px;
+    --txtregular: 18px;
+    --txtlight: 15px;
 
     --fontwbold: 700;
     --fontwsemibold: 600;
@@ -58,6 +58,7 @@ section.home {
     font-size: var(--txtregular);
     font-weight: var(--fontwregular);
     line-height: 74px;
+    border-left-color: #307c2d;
 }
 
 .text-regular {
@@ -87,6 +88,7 @@ section.cards {
     align-items: center;
     min-height: 100vh;
     background: #212529;
+    border-radius: 50px 50px 0 0;
 }
 
 .cards .container {
@@ -116,7 +118,7 @@ section.cards {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: #ffffff;
+    background: rgb(255, 255, 255);
     box-shadow: #ffffff28;
     border-radius: 15px;
     display: flex;
@@ -128,6 +130,8 @@ section.cards {
 .container .card:hover .box {
     transform: translateY(-50px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(187, 250, 192) 100%);
 }
 
 .container .card .box .content {
@@ -168,7 +172,7 @@ section.cards {
     position: relative;
     display: inline-block;
     padding: 8px 20px;
-    background-color: #307c2d;
+    background-color: #5bcc57;
     margin-top: 15px;
     border-radius: 20px;
     color: #ffffff;
@@ -178,7 +182,7 @@ section.cards {
 }
 
 .container .card:hover .box .content a {
-    background: #8f0909;
+    background: #307c2d;
 
 }
 
@@ -238,11 +242,6 @@ section.cards {
     .text-regular {
         text-align: center;
     }
-
-    .nav-space {
-        margin-left: 100px;
-    }
-
 
 
 }
